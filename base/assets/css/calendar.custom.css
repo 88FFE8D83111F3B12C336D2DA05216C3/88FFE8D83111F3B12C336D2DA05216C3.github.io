@@ -172,3 +172,6 @@ body *{
     color: #25396f;
 }
 
+.page-aside-right .page-aside-switch{
+    padding: 25px 12px 25px 18px;
+}
