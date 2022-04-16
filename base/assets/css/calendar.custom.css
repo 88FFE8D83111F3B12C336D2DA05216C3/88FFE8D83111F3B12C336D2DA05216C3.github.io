@@ -1,0 +1,174 @@
+body *{
+    font-family: Nunito,Roboto,sans-serif;
+}
+.navbar.site-navbar{
+    box-shadow: none;
+}
+.site-menubar,
+.site-menubar-body{
+    height:95%;
+}
+.site-menubar-body .site-menu .site-menu-category,
+.site-menubar-body .site-menu .site-menu-item>a .site-menu-icon,
+.site-menubar-body .site-menu .site-menu-item>a .site-menu-title,
+.site-menubar-body .site-menu .site-menu-item>a .site-menu-arrow{
+    font-weight: 500;
+    font-size: 1.1rem!important;
+}
+.site-menubar-body .site-menu .site-menu-sub .site-menu-item>a .site-menu-icon,
+.site-menubar-body .site-menu .site-menu-sub .site-menu-item>a .site-menu-title,
+.site-menubar-body .site-menu .site-menu-sub .site-menu-item>a .site-menu-arrow{
+    font-size: 1rem!important;
+}
+.site-menubar-body .site-menu .site-menu-category{
+    color: #25396f;
+}
+.site-menubar-fold .site-menu-category{
+    color: transparent!important;
+}
+
+.site-menubar-fold .site-menu>.site-menu-item>a .site-menu-icon {
+    font-size:24px!important;
+}
+
+.site-menubar-unfold .site-menu .site-menu-item>a{
+    transition: all .5s;
+}
+
+
+
+
+
+.site-menu .site-menu-item.open>a{
+/* .site-menu .site-menu-item.open.hover>a,
+.site-menu .site-menu-item.hover>a, */
+/* .site-menu .site-menu-sub .site-menu-item.active.hover>a{ */
+    background-color: rgba(33,33,33,.05)!important;
+}
+.site-menu .site-menu-sub .site-menu-item.active:not(.has-sub)>a{
+    color:#435ebe!important;
+}
+
+.site-menu .site-menu-item.hover>a{
+    transition: all .5s!important;
+    /* margin:0 1rem!important; */
+}
+
+.site-menu>.site-menu-item.active>a{
+    background-color: #435ebe!important;
+}
+
+
+.site-menubar-fold .site-menu .site-menu-item.open.active>a,
+.site-menubar-fold .site-menu .site-menu-item.active>a{
+    background-color: #435ebe!important; 
+}
+
+.site-menubar-fold .site-menu .site-menu-item.active>a *{
+    color:#fff;
+}
+
+
+.site-menu>.site-menu-item.active{
+    border:none;
+}
+
+
+
+.site-menu{
+    padding-left:0.7rem!important;
+    padding-right: 1rem!important;
+}
+.site-menubar-fold .site-menu{
+    padding:0!important;
+}
+
+.site-menu .site-menu-sub .site-menu-item a{
+    padding-left:2.5rem;
+}
+.site-menubar-unfold .site-menu .site-menu-sub .site-menu-item.hover>a{
+    padding-left: 2.8rem;
+}
+.site-menu .site-menu-sub .site-menu-sub .site-menu-item a{
+    padding-left:3rem;
+}
+.site-menu .site-menu-sub .site-menu-sub .site-menu-item.hover a{
+    padding-left:3.3rem;
+}
+/* .site-menu .site-menu-sub .site-menu-sub   .site-menu-item a{
+    padding-left:2.5rem;
+} */
+
+
+
+
+
+
+
+
+
+
+.site-navbar .navbar-header{
+    background-color: #fff;
+    border-right: 1px solid #e0e0e0;
+}
+
+.site-menubar{
+    box-shadow: none;
+    border-right: 1px solid #e0e0e0;
+}
+
+.site-menu .site-menu-item.hover:not(.active) > a,
+.site-menu .site-menu-sub .site-menu-item.hover > a{
+    background-color: rgba(33,33,33,.05)!important;
+}
+
+.site-menu>.site-menu-item.open,
+.site-menu .site-menu-sub .site-menu-item.open,
+.site-menu .site-menu-sub .site-menu-item.active{
+    background-color: #fff;
+}
+.site-menu .site-menu-sub .site-menu-item.has-sub{
+    /* border-top: 1px solid rgba(33,33,33,.05); */
+    border-bottom: 1px solid rgba(33,33,33,.05);
+}
+
+.site-menu .site-menu-item.open ul.site-menu-sub,
+.site-menu .site-menu-item.active ul.site-menu-sub{
+    background-color:#fff;
+}
+
+.site-menu .site-menu-item a{
+    border-radius: .5rem;
+    color: #25396f;
+}
+.site-menubar-fold .site-menu .site-menu-item.has-sub>a{
+    border-radius: 0;
+}
+.site-menu .site-menu-item>a .site-menu-icon{
+    color: #7c8db5;
+}
+
+.site-menu .site-menu-item.open>a,
+.site-menu .site-menu-item.hover>a,
+.site-menu .site-menu-item:hover>a,
+.site-menu .site-menu-sub .site-menu-item.hover>a,
+.site-menu .site-menu-sub .site-menu-item:hover>a{
+    color: #25396f;
+}
+
+.site-menu .site-menu-item.active>a,
+.site-menu .site-menu-item.active>a i.site-menu-icon{
+    color:#fff
+}
+
+.page{
+    background-color: #fff;
+}
+.page .page-main .page-title h3{
+    padding:0 30px;
+    font-weight:700;
+    font-size:1.75rem;
+    color: #25396f;
+}
+
