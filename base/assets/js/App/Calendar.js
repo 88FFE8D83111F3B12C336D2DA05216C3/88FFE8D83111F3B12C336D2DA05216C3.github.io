@@ -101,7 +101,7 @@
           },
           defaultDate: '2016-10-12',
           defaultView: 'agendaWeek', 
-          height: $(window).height()*0.8,
+          // height: $(window).height()*0.8,
           selectable: true,
           selectHelper: true,
           select: function select(start_date, end_date, jsEvent, view) {
@@ -129,7 +129,7 @@
 
             options.events = view.calendar.clientEvents();
             options.aspectRatio = width < 667 ? 0.5 : 1.35;
-            options.height = $(window).outerHeight()*0.8;
+            // options.height = $(window).outerHeight()*0.8;
 
             $('#calendar').fullCalendar('destroy');
             $('#calendar').fullCalendar(options);

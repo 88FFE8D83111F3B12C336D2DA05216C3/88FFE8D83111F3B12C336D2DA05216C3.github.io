@@ -175,3 +175,9 @@ body *{
 .page-aside-right .page-aside-switch{
     padding: 25px 12px 25px 18px;
 }
+
+.navbar-default .hamburger .hamburger-bar, 
+.navbar-default .hamburger:after, 
+.navbar-default .hamburger:before{
+   background-color: #757575!important;
+}
