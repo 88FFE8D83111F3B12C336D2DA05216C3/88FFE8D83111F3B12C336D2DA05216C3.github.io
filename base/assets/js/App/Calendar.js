@@ -81,16 +81,20 @@
           start: '2022-04-21T12:00:00'
         }, {
           title: 'Meeting',
-          start: '2022-04-19T09:30:00'
+          start: '2022-04-19T09:30:00',
+          end: '2022-04-19T11:30:00'
         }, {
           title: 'Happy Hour',
-          start: '2022-04-22T17:30:00'
+          start: '2022-04-22T17:30:00',
+          end: '2022-04-22T19:30:00'
         }, {
           title: 'Dinner',
-          start: '2022-04-19T18:00:00'
+          start: '2022-04-19T18:00:00',
+          end: '2022-04-19T20:00:00'
         }, {
           title: 'Birthday Party',
-          start: '2022-04-20T07:00:00'
+          start: '2022-04-20T07:00:00',
+          end: '2022-04-20T09:00:00'
         }];
 
         var myOptions = {
@@ -105,6 +109,7 @@
           selectable: true,
           selectHelper: true,
           select: function select(start_date, end_date, jsEvent, view) {
+            $('#addNewEvent #ename').val('');
             $('#addNewEvent #starts').val('');
             $('#addNewEvent #ends').val('');
             $('#addNewEvent #starts').val(moment(start_date).format('YYYY-MM-DD HH:mm'));
@@ -118,8 +123,8 @@
                 event.title = $modal.find('input#ename').val();
                 if(event.title == '')
                   return;
-                event.start = start_date.format();
-                event.end = end_date.format();
+                event.start = moment($('#addNewEvent #starts').val()).format();
+                event.end = moment($('#addNewEvent #ends').val()).format();
                 
                 $('#calendar').fullCalendar('renderEvent', event);
                 
@@ -147,12 +152,12 @@
               $('#editNewEvent-datetimepicker-editStarts').datetimepicker('date',moment(event.start, 'YYYY-MM-DD HH:mm'));
               // $('#editStarts').datepicker('update', event.start._d);
             } else {
-              $('#editStarts').datepicker('update', '');
+              // $('#editStarts').datepicker('update', '');
             }
             if (event.end) {
               $('#editNewEvent-datetimepicker-editEnds').datetimepicker('date',moment(event.end, 'YYYY-MM-DD HH:mm'));
             } else {
-              $('#editEnds').datepicker('update', '');
+              // $('#editEnds').datepicker('update', '');
             }
 
             $('#editColor [type=radio]').each(function () {
@@ -177,8 +182,10 @@
               // event.start = new Date($('#editStarts').data('datepicker').getDate());
               // event.end = new Date($('#editEnds').data('datepicker').getDate());
 
-              event.start = moment.utc($('#editStarts').data('datepicker').getDate()).format()
-              event.end = moment.utc($('#editEnds').data('datepicker').getDate()).format()
+              // event.start = moment.utc($('#editNewEvent-datetimepicker-editStarts').datetimepicker('viewDate')).format();
+              // event.end = moment.utc($('#editNewEvent-datetimepicker-editEnds').datetimepicker('viewDate')).format();
+              event.start = moment.utc($('#editStarts').val()).format();
+              event.end = moment.utc($('#editEnds').val()).format();
               $('#calendar').fullCalendar('updateEvent', event);
             });
           },
