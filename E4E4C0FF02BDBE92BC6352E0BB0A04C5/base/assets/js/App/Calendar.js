@@ -55,42 +55,42 @@
       value: function handleFullcalendar() {
         var myEvents = [{
           title: 'All Day Event',
-          start: '2016-10-01'
+          start: '2022-04-10'
         }, {
           title: 'Long Event',
-          start: '2016-10-07',
-          end: '2016-10-10',
+          start: '2022-04-17',
+          end: '2022-04-17',
           backgroundColor: (0, _Config.colors)('cyan', 600),
           borderColor: (0, _Config.colors)('cyan', 600)
         }, {
           id: 999,
           title: 'Repeating Event',
-          start: '2016-10-09T16:00:00',
+          start: '2022-04-09T16:00:00',
           backgroundColor: (0, _Config.colors)('red', 600),
           borderColor: (0, _Config.colors)('red', 600)
         }, {
           title: 'Conference',
-          start: '2016-10-11',
-          end: '2016-10-13'
+          start: '2022-04-18',
+          end: '2022-04-20'
         }, {
           title: 'Meeting',
-          start: '2016-10-12T10:30:00',
-          end: '2016-10-12T12:30:00'
+          start: '2022-04-19T10:30:00',
+          end: '2022-04-19T12:30:00'
         }, {
           title: 'Lunch',
-          start: '2016-10-12T12:00:00'
+          start: '2022-04-19T12:00:00'
         }, {
           title: 'Meeting',
-          start: '2016-10-12T14:30:00'
+          start: '2022-04-19T14:30:00'
         }, {
           title: 'Happy Hour',
-          start: '2016-10-12T17:30:00'
+          start: '2022-04-19T17:30:00'
         }, {
           title: 'Dinner',
-          start: '2016-10-12T20:00:00'
+          start: '2022-04-19T20:00:00'
         }, {
           title: 'Birthday Party',
-          start: '2016-10-13T07:00:00'
+          start: '2022-04-20T07:00:00'
         }];
 
         var myOptions = {
@@ -99,7 +99,7 @@
             center: 'prev,title,next',
             right: 'month,agendaWeek,agendaDay'
           },
-          defaultDate: '2016-10-12',
+          defaultDate: '2022-04-20',
           defaultView: 'agendaWeek', 
           // height: $(window).height()*0.8,
           selectable: true,
