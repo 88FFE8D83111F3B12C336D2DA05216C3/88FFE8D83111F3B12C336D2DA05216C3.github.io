@@ -40,7 +40,8 @@
         key: 'getDefaults',
         value: function getDefaults() {
           return {
-            sideBySide: true
+            format: 'YYYY-MM-DD HH:mm',
+            // sideBySide: true
             // autoclose: true
           };
         }

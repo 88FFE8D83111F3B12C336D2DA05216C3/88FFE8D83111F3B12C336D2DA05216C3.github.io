@@ -33,6 +33,8 @@
         <link rel="stylesheet" href="../../../assets/examples/css/apps/calendar.css">
 
         <link rel="stylesheet" href="../../../../global/vendor/tempusdominus-bootstrap/tempusdominus-bootstrap-4.min.css">
+
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" />
     
     
     <!-- Fonts -->
@@ -1646,9 +1648,8 @@
                   <div class="form-group row">
                     <label class="col-md-2 form-control-label" for="starts">Starts:</label>
                     <div class="col-md-10">
-                      <div class="input-group">
-                        <input type="text" class="form-control" id="starts" data-container="#addNewEvent"
-                          data-plugin="datepicker">
+                      <div class="input-group date" id="addNewEvent-datetimepicker-starts" data-plugin="datetimepicker"  data-target-input="nearest">
+                        <input type="text" class="form-control datetimepicker-input" data-toggle="datetimepicker" data-target="#addNewEvent-datetimepicker-starts" id="starts" data-container="#addNewEvent" >
                         <span class="input-group-addon">
                           <i class="icon md-calendar" aria-hidden="true"></i>
                         </span>
@@ -1659,9 +1660,8 @@
                   <div class="form-group row">
                     <label class="col-md-2 form-control-label" for="ends">Ends:</label>
                     <div class="col-md-10">
-                      <div class="input-group">
-                        <input type="text" class="form-control" id="ends" data-container="#addNewEvent"
-                          data-plugin="datepicker">
+                      <div class="input-group date" id="addNewEvent-datetimepicker-ends" data-plugin="datetimepicker" data-target-input="nearest">
+                        <input type="text" class="form-control datetimepicker-input" data-toggle="datetimepicker" data-target="#addNewEvent-datetimepicker-ends" id="ends" data-container="#addNewEvent">
                         <span class="input-group-addon">
                           <i class="icon md-calendar" aria-hidden="true"></i>
                         </span>
@@ -1747,9 +1747,8 @@
                   <div class="form-group row">
                     <label class="col-md-2 form-control-label" for="editStarts">Starts:</label>
                     <div class="col-md-10">
-                      <div class="input-group">
-                        <input type="text" class="form-control" id="editStarts" name="editStarts" data-container="#editNewEvent"
-                          data-plugin="datepicker">
+                      <div class="input-group date" id="editNewEvent-datetimepicker-editStarts" data-plugin="datetimepicker" data-target-input="nearest">
+                        <input type="text" class="form-control datetimepicker-input" data-toggle="datetimepicker" data-target="#editNewEvent-datetimepicker-editStarts" id="editStarts" name="editStarts" data-container="#editNewEvent">
                         <span class="input-group-addon">
                           <i class="icon md-calendar" aria-hidden="true"></i>
                         </span>
@@ -1760,9 +1759,8 @@
                   <div class="form-group row">
                     <label class="col-md-2 form-control-label" for="editEnds">Ends:</label>
                     <div class="col-md-10">
-                      <div class="input-group">
-                        <input type="text" class="form-control" id="editEnds" data-container="#editNewEvent"
-                          data-plugin="datepicker">
+                      <div class="input-group date" id="editNewEvent-datetimepicker-editEnds" data-plugin="datetimepicker" data-target-input="nearest">
+                        <input type="text" class="form-control datetimepicker-input" data-toggle="datetimepicker" data-target="#editNewEvent-datetimepicker-editEnds" id="editEnds" name="editEnds" data-container="#editNewEvent">
                         <span class="input-group-addon">
                           <i class="icon md-calendar" aria-hidden="true"></i>
                         </span>
@@ -1972,7 +1970,7 @@
         <script src="../../../../global/vendor/moment/moment.min.js"></script>
         <script src="../../../../global/vendor/fullcalendar/fullcalendar.js"></script>
         <script src="../../../../global/vendor/jquery-selective/jquery-selective.min.js"></script>
-        <script src="../../../../global/vendor/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+        <!-- <script src="../../../../global/vendor/bootstrap-datepicker/bootstrap-datepicker.js"></script> -->
         <script src="../../../../global/vendor/bootstrap-touchspin/bootstrap-touchspin.min.js"></script>
         <script src="../../../../global/vendor/bootbox/bootbox.js"></script>
 
@@ -2000,7 +1998,7 @@
     <script src="../../../../global/js/Plugin/slidepanel.js"></script>
     <script src="../../../../global/js/Plugin/switchery.js"></script>
     <script src="../../../../global/js/Plugin/bootstrap-touchspin.js"></script>
-    <script src="../../../../global/js/Plugin/bootstrap-datepicker.js"></script>
+    <!-- <script src="../../../../global/js/Plugin/bootstrap-datepicker.js"></script> -->
 
     <script src="../../../../global/js/Plugin/tempusdominus-bootstrap.js"></script>
 

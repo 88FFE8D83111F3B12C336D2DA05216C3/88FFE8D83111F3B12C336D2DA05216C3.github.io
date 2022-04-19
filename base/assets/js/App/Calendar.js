@@ -105,8 +105,12 @@
           selectable: true,
           selectHelper: true,
           select: function select(start_date, end_date, jsEvent, view) {
+            $('#addNewEvent #starts').val('');
+            $('#addNewEvent #ends').val('');
+            $('#addNewEvent #starts').val(moment(start_date).format('YYYY-MM-DD HH:mm'));
+            $('#addNewEvent #ends').val(moment(end_date).format('YYYY-MM-DD HH:mm'));
+            
             $('#addNewEvent').modal('show');
-
 
             $('#addNewEvent.modal .form-actions #btn-add-event').one('click', function(e){
                 var $modal = $(this).closest('.modal');
@@ -118,6 +122,7 @@
                 event.end = end_date.format();
                 
                 $('#calendar').fullCalendar('renderEvent', event);
+                
             });
           },
 
@@ -139,12 +144,13 @@
             $('#editEname').val(event.title);
 
             if (event.start) {
-              $('#editStarts').datepicker('update', event.start._d);
+              $('#editNewEvent-datetimepicker-editStarts').datetimepicker('date',moment(event.start, 'YYYY-MM-DD HH:mm'));
+              // $('#editStarts').datepicker('update', event.start._d);
             } else {
               $('#editStarts').datepicker('update', '');
             }
             if (event.end) {
-              $('#editEnds').datepicker('update', event.end._d);
+              $('#editNewEvent-datetimepicker-editEnds').datetimepicker('date',moment(event.end, 'YYYY-MM-DD HH:mm'));
             } else {
               $('#editEnds').datepicker('update', '');
             }
