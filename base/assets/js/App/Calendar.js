@@ -55,46 +55,46 @@
       value: function handleFullcalendar() {
         var myEvents = [{
           title: 'All Day Event',
-          start: '2022-04-10'
+          start: '2023-03-10'
         }, {
           title: 'Long Event',
-          start: '2022-04-17',
-          end: '2022-04-17',
+          start: '2023-03-17',
+          end: '2023-03-17',
           backgroundColor: (0, _Config.colors)('cyan', 600),
           borderColor: (0, _Config.colors)('cyan', 600)
         }, {
           id: 999,
           title: 'Repeating Event',
-          start: '2022-04-09T16:00:00',
+          start: '2023-03-09T16:00:00',
           backgroundColor: (0, _Config.colors)('red', 600),
           borderColor: (0, _Config.colors)('red', 600)
         }, {
           title: 'Conference',
-          start: '2022-04-18',
-          end: '2022-04-20'
+          start: '2023-03-18',
+          end: '2023-03-20'
         }, {
           title: 'Meeting',
-          start: '2022-04-22T10:30:00',
-          end: '2022-04-22T12:30:00'
+          start: '2023-03-22T10:30:00',
+          end: '2023-03-22T12:30:00'
         }, {
           title: 'Lunch',
-          start: '2022-04-21T12:00:00'
+          start: '2023-03-21T12:00:00'
         }, {
           title: 'Meeting',
-          start: '2022-04-19T09:30:00',
-          end: '2022-04-19T11:30:00'
+          start: '2023-03-19T09:30:00',
+          end: '2023-03-19T11:30:00'
         }, {
           title: 'Happy Hour',
-          start: '2022-04-22T17:30:00',
-          end: '2022-04-22T19:30:00'
+          start: '2023-03-22T17:30:00',
+          end: '2023-03-22T19:30:00'
         }, {
           title: 'Dinner',
-          start: '2022-04-19T18:00:00',
-          end: '2022-04-19T20:00:00'
+          start: '2023-03-19T18:00:00',
+          end: '2023-03-19T20:00:00'
         }, {
           title: 'Birthday Party',
-          start: '2022-04-20T07:00:00',
-          end: '2022-04-20T09:00:00'
+          start: '2023-03-20T07:00:00',
+          end: '2023-03-20T09:00:00'
         }];
 
         var myOptions = {
@@ -103,7 +103,7 @@
             center: 'prev,title,next',
             right: 'month,agendaWeek,agendaDay'
           },
-          defaultDate: '2022-04-20',
+          defaultDate: '2023-03-20',
           defaultView: 'agendaWeek', 
           // height: $(window).height()*0.8,
           selectable: true,
