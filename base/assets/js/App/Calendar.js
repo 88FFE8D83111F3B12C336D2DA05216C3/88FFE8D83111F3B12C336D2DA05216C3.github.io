@@ -55,11 +55,11 @@
       value: function handleFullcalendar() {
         var myEvents = [{
           title: 'All Day Event',
-          start: '2023-03-10'
+          start: '2023-03-05'
         }, {
           title: 'Long Event',
-          start: '2023-03-17',
-          end: '2023-03-17',
+          start: '2023-03-06',
+          end: '2023-03-06',
           backgroundColor: (0, _Config.colors)('cyan', 600),
           borderColor: (0, _Config.colors)('cyan', 600)
         }, {
@@ -70,31 +70,31 @@
           borderColor: (0, _Config.colors)('red', 600)
         }, {
           title: 'Conference',
-          start: '2023-03-18',
-          end: '2023-03-20'
+          start: '2023-03-07',
+          end: '2023-03-08'
         }, {
           title: 'Meeting',
-          start: '2023-03-22T10:30:00',
-          end: '2023-03-22T12:30:00'
+          start: '2023-03-07T10:30:00',
+          end: '2023-03-07T12:30:00'
         }, {
           title: 'Lunch',
-          start: '2023-03-21T12:00:00'
+          start: '2023-03-09T13:00:00'
         }, {
           title: 'Meeting',
-          start: '2023-03-19T09:30:00',
-          end: '2023-03-19T11:30:00'
+          start: '2023-03-11T09:30:00',
+          end: '2023-03-11T11:30:00'
         }, {
           title: 'Happy Hour',
-          start: '2023-03-22T17:30:00',
-          end: '2023-03-22T19:30:00'
+          start: '2023-03-11T17:30:00',
+          end: '2023-03-11T19:30:00'
         }, {
           title: 'Dinner',
-          start: '2023-03-19T18:00:00',
-          end: '2023-03-19T20:00:00'
+          start: '2023-03-09T18:00:00',
+          end: '2023-03-09T20:00:00'
         }, {
           title: 'Birthday Party',
-          start: '2023-03-20T07:00:00',
-          end: '2023-03-20T09:00:00'
+          start: '2023-03-11T07:00:00',
+          end: '2023-03-11T09:00:00'
         }];
 
         var myOptions = {
@@ -103,7 +103,7 @@
             center: 'prev,title,next',
             right: 'month,agendaWeek,agendaDay'
           },
-          defaultDate: '2023-03-20',
+          defaultDate: '2023-03-06',
           defaultView: 'agendaWeek', 
           // height: $(window).height()*0.8,
           selectable: true,
